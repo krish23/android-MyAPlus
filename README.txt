@@ -5,11 +5,6 @@ My A Plus is the simple android application for store, edit and delete courses, 
 
 Instruction
 ---------------
-
-In Eclipse import the project as archive file
-clean the project
-build and run the project..
-enter username and password as "krishan23"
 First create semester
 Then click the individual semster and click view
 now you can add courses
