@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/lbl_old_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="18dp"
+        android:text="Settings"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_old_pass"
+        android:layout_below="@+id/lbl_old_pass"
+        android:layout_marginTop="20dp"
+        android:text="Notification                  :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ToggleButton
+        android:id="@+id/tgl_notify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_old_pass"
+        android:layout_marginLeft="43dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="Activate" />
+
+    <CheckBox
+        android:id="@+id/chk_pass_en"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/tgl_notify" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/tgl_notify"
+        android:layout_marginTop="51dp"
+        android:text="Password Protection :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/btn_pass_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/chk_pass_en"
+        android:layout_toRightOf="@+id/chk_pass_en"
+        android:text="Reset"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_csm_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spn_current_semester"
+        android:layout_toRightOf="@+id/tgl_notify"
+        android:text="Update" />
+
+    <Spinner
+        android:id="@+id/spn_current_semester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chk_pass_en"
+        android:layout_marginTop="49dp"
+        android:layout_toRightOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/spn_current_semester"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/tgl_notify"
+        android:text="Current Semester       :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

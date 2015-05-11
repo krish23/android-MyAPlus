@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/lbl_addsemester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="19dp"
+        android:text="Add Semester"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lbl_semestername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_addsemester"
+        android:layout_below="@+id/lbl_addsemester"
+        android:layout_marginTop="40dp"
+        android:text="Semester Name  :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/txt_add_sem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_semestername"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lbl_semestername"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btn_se_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt_add_sem"
+        android:layout_marginTop="30dp"
+        android:text="Add" />
+
+</RelativeLayout>

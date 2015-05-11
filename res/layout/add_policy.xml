@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Courses" >
+
+    <TextView
+        android:id="@+id/lbl_polcat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="43dp"
+        android:text="Category      :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/lbl_polper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_polcat"
+        android:layout_below="@+id/lbl_polcat"
+        android:layout_marginTop="51dp"
+        android:text="Percentage :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/txt_polCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lbl_polcat"
+        android:layout_alignBottom="@+id/lbl_polcat"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/lbl_polper"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/txt_polPerc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lbl_polper"
+        android:layout_alignLeft="@+id/txt_polCat"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_polok"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt_polPerc"
+        android:layout_marginTop="18dp"
+        android:text="Ok" />
+
+</RelativeLayout>

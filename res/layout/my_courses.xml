@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
+    tools:context="My_Courses" >
+
+    <TextView
+        android:id="@+id/lbl_mycourses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="14dp"
+        android:text="My Courses"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btn_newcourse"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lbl_mycourses"
+        android:layout_alignBottom="@+id/lbl_mycourses"
+        android:layout_alignParentRight="true"
+        android:text="New" 
+        android:onClick="addCourses"/>
+
+    <TextView
+        android:id="@+id/lbl_course_gpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_mycourses"
+        android:layout_below="@+id/btn_newcourse"
+        android:layout_marginTop="11dp"
+        android:text="Semester GPA  :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/out_course_gpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lbl_course_gpa"
+        android:layout_alignBottom="@+id/lbl_course_gpa"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/lbl_course_gpa"
+        android:text="0.0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ListView
+        android:id="@+id/lst_courses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lbl_course_gpa" >
+
+    </ListView>
+
+</RelativeLayout>

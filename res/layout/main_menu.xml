@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme"
+    tools:context=".Main_Menu" >
+
+    <Button
+        android:id="@+id/btn_grades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_sem_view"
+        android:layout_alignLeft="@+id/btn_hm"
+        android:layout_alignRight="@+id/btn_hm"
+        android:layout_marginBottom="42dp"
+        android:onClick="openGrades"
+        android:text="Manage Grades" />
+
+    <Button
+        android:id="@+id/btn_semester_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_hm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:onClick="openSemester"
+        android:text="Manage Semester" />
+
+    <Button
+        android:id="@+id/btn_hm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_grades"
+        android:layout_alignLeft="@+id/btn_semester_list"
+        android:layout_alignRight="@+id/btn_semester_list"
+        android:layout_marginBottom="33dp"
+        android:onClick="openAddHomework"
+        android:text="Add Homework" />
+
+    <Button
+        android:id="@+id/btn_sem_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="38dp"
+        android:layout_toRightOf="@+id/btn_grades"
+        android:onClick="openSettings"
+        android:text="Settings" />
+
+</RelativeLayout>

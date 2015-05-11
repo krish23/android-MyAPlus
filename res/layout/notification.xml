@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="Remind Me  :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Spinner
+        android:id="@+id/spn_notify_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btn_notify_ok"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/spn_notify_days"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="11dp"
+        android:text="OK" />
+
+</RelativeLayout>

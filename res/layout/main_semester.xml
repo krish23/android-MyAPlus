@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/lbl_semesters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="13dp"
+        android:text="Semesters"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lbl_o_gpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_semesters"
+        android:layout_below="@+id/lbl_semesters"
+        android:layout_marginTop="14dp"
+        android:text="Overall GPA   :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/out_overalgpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lbl_o_gpa"
+        android:layout_alignBottom="@+id/lbl_o_gpa"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/lbl_o_gpa"
+        android:text="0.0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/btn_add_semester"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/out_overalgpa"
+        android:layout_alignParentRight="true"
+        android:text="Add" 
+        android:onClick="addSemester"/>
+
+    <ListView
+        android:id="@+id/lst_semester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lbl_o_gpa"
+        android:layout_marginTop="16dp" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_sem_view"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_add_semester"
+        android:layout_toLeftOf="@+id/btn_add_semester"
+        android:text="View" 
+        android:onClick="viewCourse"/>
+
+</RelativeLayout>

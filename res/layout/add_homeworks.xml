@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Homework" >
+
+    <TextView
+        android:id="@+id/lbl_addhomeworks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Add HomeWorks"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txt_hm_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lbl_hmdesc"
+        android:layout_alignLeft="@+id/spn_hmcat"
+        android:layout_alignParentRight="true"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/txt_hmdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lbl_hmddate"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/lbl_hmddate"
+        android:ems="10"
+        android:inputType="none"
+		android:editable="false" />
+
+    <EditText
+        android:id="@+id/txt_hmtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lbl_hmtime"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/lbl_hmtime"
+        android:ems="10"
+        android:inputType="time" />
+
+    <TextView
+        android:id="@+id/lbl_hmcat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_addhomeworks"
+        android:layout_below="@+id/lbl_addhomeworks"
+        android:layout_marginTop="21dp"
+        android:text=" Category    :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Spinner
+        android:id="@+id/spn_hmcat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lbl_addhomeworks"
+        android:layout_toRightOf="@+id/lbl_hmdesc" />
+
+    <RadioGroup
+        android:id="@+id/rdo_hm_pr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spn_hmcat"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/lbl_hmpri"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rdo_hm_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lbl_hmtime"
+            android:layout_toRightOf="@+id/lbl_hmcat"
+            android:text="Low" />
+
+        <RadioButton
+            android:id="@+id/rdo_hm_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium" />
+
+        <RadioButton
+            android:id="@+id/rdo_hm_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="21dp"
+            android:text="High" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_hm_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginRight="16dp"
+        android:text="Add" />
+
+    <TextView
+        android:id="@+id/lbl_hm_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_hmcat"
+        android:layout_below="@+id/spn_hmcat"
+        android:layout_marginTop="23dp"
+        android:text=" Course       :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Spinner
+        android:id="@+id/spn_hm_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spn_hmcat"
+        android:layout_below="@+id/spn_hmcat" />
+
+    <TextView
+        android:id="@+id/lbl_hmddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_hmpri"
+        android:layout_below="@+id/rdo_hm_pr"
+        android:layout_marginTop="37dp"
+        android:text="Due Date    :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/lbl_hmtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_hmddate"
+        android:layout_marginTop="34dp"
+        android:layout_toLeftOf="@+id/txt_hm_desc"
+        android:text="Time           :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/lbl_hmdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_hm_course"
+        android:layout_below="@+id/lbl_hmtime"
+        android:layout_marginTop="40dp"
+        android:text="Description :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <CheckBox
+        android:id="@+id/chk_hm_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_hmdesc"
+        android:layout_below="@+id/txt_hm_desc"
+        android:layout_marginTop="36dp"
+        android:text="Reminder" />
+
+    <TextView
+        android:id="@+id/lbl_hmpri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_hmtime"
+        android:layout_below="@+id/spn_hm_course"
+        android:layout_marginTop="28dp"
+        android:lines="2"
+        android:text="Priority \nLevel           :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

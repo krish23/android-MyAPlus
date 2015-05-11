@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/lbl_thedays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="17dp"
+        android:text="Class Days :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/chk_tue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chk_mon"
+        android:layout_alignBottom="@+id/chk_mon"
+        android:layout_toRightOf="@+id/lbl_thedays"
+        android:text="Tue" />
+
+    <CheckBox
+        android:id="@+id/chk_wed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chk_tue"
+        android:layout_alignBottom="@+id/chk_tue"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/chk_tue"
+        android:text="Wed" />
+
+    <CheckBox
+        android:id="@+id/chk_fri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chk_thu"
+        android:layout_alignLeft="@+id/chk_tue"
+        android:text="Fri" />
+
+    <CheckBox
+        android:id="@+id/chk_sat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chk_fri"
+        android:layout_alignBottom="@+id/chk_fri"
+        android:layout_alignLeft="@+id/chk_wed"
+        android:text="Sat" />
+
+    <EditText
+        android:id="@+id/txt_hm_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_thetime"
+        android:layout_below="@+id/chk_sun"
+        android:layout_marginTop="43dp"
+        android:layout_toLeftOf="@+id/chk_fri"
+        android:ems="10"
+        android:inputType="time" />
+
+    <TextView
+        android:id="@+id/lbl_thetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chk_thu"
+        android:layout_below="@+id/chk_sun"
+        android:layout_marginTop="26dp"
+        android:text="Class Time :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txt_polPerc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_hm_desc"
+        android:layout_alignBottom="@+id/txt_hm_desc"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/chk_tue"
+        android:ems="10"
+        android:inputType="time" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lbl_timeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_polPerc"
+        android:layout_alignBottom="@+id/txt_polPerc"
+        android:layout_centerHorizontal="true"
+        android:text="To"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btn_timeok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txt_polPerc"
+        android:layout_below="@+id/txt_polPerc"
+        android:layout_marginTop="18dp"
+        android:text="Ok" />
+
+    <CheckBox
+        android:id="@+id/chk_mon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_thedays"
+        android:layout_below="@+id/lbl_thedays"
+        android:text="Mon" />
+
+    <CheckBox
+        android:id="@+id/chk_thu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chk_mon"
+        android:layout_alignTop="@+id/chk_mon"
+        android:layout_marginTop="20dp"
+        android:text="Thu" />
+
+    <CheckBox
+        android:id="@+id/chk_sun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chk_thu"
+        android:layout_below="@+id/chk_mon"
+        android:text="Sun" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/lbl_user_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="22dp"
+        android:text="User Login Form"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lbl_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_user_login"
+        android:layout_below="@+id/lbl_user_login"
+        android:layout_marginTop="56dp"
+        android:text="Username :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/txt_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lbl_username"
+        android:layout_alignBottom="@+id/lbl_username"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/lbl_username"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/txt_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lbl_password"
+        android:layout_alignBottom="@+id/lbl_password"
+        android:layout_alignLeft="@+id/txt_username"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/lbl_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_username"
+        android:layout_below="@+id/txt_username"
+        android:layout_marginTop="43dp"
+        android:text="Password :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt_password"
+        android:layout_marginTop="35dp"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_password"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="115dp"
+        android:text="Testing username and password is : krishan23"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
